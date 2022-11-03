@@ -102,7 +102,7 @@
 <img src="https://github.com/sfirke/janitor/raw/main/man/figures/logo_small.png" width="120" height="139"><br />
 </td>
 <td>
-<img src="https://github.com/ianmoran11/mmtable2/raw/master/man/figures/logo.png" width="120" height="139"><br />
+<!---<img src="" width="120" height="139"><br />--->
 </td>
 </tr>
 </table>
