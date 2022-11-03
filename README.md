@@ -1,7 +1,7 @@
-# r
-A place for my R code to live 🏡
-
-What R packages have I used? Check them out⤵️
+### This is a place for my R code to live 🏡
+---
+### **What R packages have I used?**  
+*Check them out*⤵️
 <table>
 <tr>
 <td>
