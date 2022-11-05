@@ -1,7 +1,7 @@
 ## This is a place for my R code to live 🏡
 
 ### **What R packages have I used?**  
-*Check them out*⤵️ *(these are just the ones with hex images, and in no specific order)*
+*Check them out* ⤵️ *(these are just the ones with hex images, and in no specific order)*
 <table>
 <tr>
 <td>
