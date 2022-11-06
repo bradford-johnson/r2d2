@@ -4,15 +4,17 @@ library(gt)
 library(broom)
 
 mtcars %>%
-  group_by(vs) %>%
-  do(tidy(t.test(.$mpg))) %>%
+  do(tidy(t.test(.$mpg ~ .$vs))) %>%
   gt()
 ```
+
 <table class="gt_table">
   
   <thead class="gt_col_headings">
     <tr>
       <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col">estimate</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col">estimate1</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col">estimate2</th>
       <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col">statistic</th>
       <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col">p.value</th>
       <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col">parameter</th>
@@ -23,27 +25,15 @@ mtcars %>%
     </tr>
   </thead>
   <tbody class="gt_table_body">
-    <tr class="gt_group_heading_row">
-      <td colspan="8" class="gt_group_heading">0</td>
-    </tr>
-    <tr class="gt_row_group_first"><td class="gt_row gt_right">16.61667</td>
-<td class="gt_row gt_right">18.26056</td>
-<td class="gt_row gt_right">1.316696e-12</td>
-<td class="gt_row gt_right">17</td>
-<td class="gt_row gt_right">14.69679</td>
-<td class="gt_row gt_right">18.53655</td>
-<td class="gt_row gt_left">One Sample t-test</td>
-<td class="gt_row gt_left">two.sided</td></tr>
-    <tr class="gt_group_heading_row">
-      <td colspan="8" class="gt_group_heading">1</td>
-    </tr>
-    <tr class="gt_row_group_first"><td class="gt_row gt_right">24.55714</td>
-<td class="gt_row gt_right">17.08213</td>
-<td class="gt_row gt_right">2.750107e-10</td>
-<td class="gt_row gt_right">13</td>
-<td class="gt_row gt_right">21.45141</td>
-<td class="gt_row gt_right">27.66287</td>
-<td class="gt_row gt_left">One Sample t-test</td>
+    <tr><td class="gt_row gt_right">-7.940476</td>
+<td class="gt_row gt_right">16.61667</td>
+<td class="gt_row gt_right">24.55714</td>
+<td class="gt_row gt_right">-4.667053</td>
+<td class="gt_row gt_right">0.0001098368</td>
+<td class="gt_row gt_right">22.71576</td>
+<td class="gt_row gt_right">-11.46251</td>
+<td class="gt_row gt_right">-4.418445</td>
+<td class="gt_row gt_left">Welch Two Sample t-test</td>
 <td class="gt_row gt_left">two.sided</td></tr>
   </tbody>
   
